@@ -9,5 +9,16 @@ window.addEventListener("DOMContentLoaded",function() {
     let z = rnd(-20,20);
     let tree = new Tree(x, 0 , z);
   }
-
+    for(let i = 0; i < 100; i++){
+    let x = rnd(-20,20);
+    let z = rnd(-20,20);
+    let cloud1 = new cloud(x, 0 , z);
+    }
+  
+    for(let i = 0; i < 100; i++){
+    let x = rnd(-20,20);
+    let z = rnd(-20,20);
+    let square = new house(x, 0 , z);
+    }
+  
 })
