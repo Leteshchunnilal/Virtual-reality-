@@ -21,4 +21,5 @@ window.addEventListener("DOMContentLoaded",function() {
     let square = new house(x, 0 , z);
     }
   
+    
 })
