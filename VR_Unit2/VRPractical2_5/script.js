@@ -11,18 +11,58 @@
 */
 
 let maze = [
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
+  "---ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt",
+"------------t--------t-----------t--------------t--------t-----t-----t-----t",
+"ttttttt--tttt--ttttttt--t--ttttttt--t--t--t--t--ttttttt--tttt--t--tttt--tttt",
+"t--t--t-----t--------t--t-----------t--t--t--t-----------t-----------------t",
+"t--t--t--tttt--tttttttttt--tttt--t--t--t--t--tttt--t--t--ttttttt--t--ttttttt",
+"t-----t--t--t--t-----t--t--t--t--t--t--t--t--t-----t--t--t-----t--t--------t",
+"tttt--t--t--t--t--tttt--t--t--ttttttttttttt--ttttttt--t--t--ttttttt--tttt--t",
+"t--t--t-----t--t-----t--------t-----------------t-----t--t-----t--t--t-----t",
+"t--t--tttt--t--t--tttt--tttt--tttt--tttttttttt--tttttttttt--t--t--tttt--tttt",
+"t-----t-----t-----------t--------t-----t--t--------t--------t--t-----t-----t",
+"tttt--t--tttt--tttt--t--tttttttttttttttt--t--tttt--tttt--t--ttttttt--t--t--t",
+"t--------t--------t--t-----t-----------t-----t-----t-----t--t--t--------t--t",
+"t--ttttttt--ttttttt--ttttttt--tttt--t--tttttttttt--tttt--tttt--tttt--tttt--t",
+"t--t-----t-----t-----t--------t--t--t--------------------t-----------t-----t",
+"t--t--tttt--ttttttt--t--t--t--t--tttt--ttttttt--t--tttt--tttt--tttt--tttt--t",
+"t--t--------t--t-----t--t--t-----t--------t--t--t--t--t--------t-----t--t--t",
+"t--ttttttt--t--t--t--t--tttttttttt--tttt--t--tttt--t--t--tttt--t--t--t--tttt",
+"t--t--t--------t--t--t--t--t--------t--------t-----t--------t--t--t-----t--t",
+"t--t--ttttttttttttttttttt--t--tttt--t--t--t--tttt--tttt--tttttttttttttttt--t",
+"t-----------t-----------t-----t--t--t--t--t--t--------t--t-----t--------t--t",
+"t--tttt--ttttttt--t--ttttttt--t--tttttttttt--t--tttt--tttt--ttttttt--tttt--t",
+"t-----t--t--------t--t--------------t--------t--t-----t--t-----t-----t--t--t",
+"ttttttt--t--t--t--t--tttt--tttttttttt--tttttttttttttttt--t--tttt--t--t--t--t",
+"t-----t-----t--t--t-----t--t--------t--t--------t--------------t--t-----t--t",
+"t--tttttttttt--tttt--t--t--tttt--ttttttttttttt--t--t--ttttttt--ttttttt--t--t",
+"t-----------t--t--t--t--------t--------t-----------t--t-----------t--------t",
+"ttttttt--tttt--t--tttt--ttttttt--tttt--ttttttt--ttttttt--t--tttt--t--ttttttt",
+"t--------t--t--t--t--------t-----t--------t-----t--t-----t--t-----t--------t",
+"tttt--t--t--t--t--tttttttttt--tttttttttttttttt--t--tttt--tttt--tttt--ttttttt",
+"t-----t-----------------------t-----t--t--t-----t--t-----t-----------t-----t",
+"t--ttttttttttttt--t--tttt--t--tttt--t--t--ttttttt--t--ttttttttttttt--t--tttt",
+"t-----t-----t-----t--t--t--t--------------t--t--t--t--t-----------t--t-----t",
+"t--t--tttt--tttttttttt--tttt--tttttttttt--t--t--t--tttt--ttttttt--t--t--tttt",
+"t--t-----t--t-----t--t--------t--t--------t--t-----------------t--t--------t",
+"t--ttttttt--tttt--t--t--tttt--t--tttttttttt--t--ttttttt--t--ttttttt--tttt--t",
+"t-----t--------t--t-----t--t--------------t-----------t--t-----------t-----t",
+"ttttttt--ttttttt--t--tttt--ttttttttttttt--t--tttt--tttttttttttttttt--t--tttt",
+"t--t-----t--------t--------------t--------------t--t--t--t-----------t-----t",
+"t--tttt--tttt--ttttttttttttttttttt--tttttttttt--tttt--t--t--t--t--ttttttt--t",
+"t--------t--------------------t-----------t-----t--------t--t--t--t-----t--t",
+"t--tttttttttttttttt--tttttttttt--t--tttt--ttttttt--tttt--t--tttttttttt--t--t",
+"t--------t-----------------------t--t-----t-----t--t--------t--------------t",
+"t--ttttttttttttt--ttttttttttttt--tttt--t--tttt--tttttttttt--tttt--ttttttt--t",
+"t--------------t--------t--t--------t--t--t--t--t-----t-----t-----t--------t",
+"ttttttt--t--t--ttttttt--t--tttt--ttttttt--t--t--t--tttt--ttttttttttttt--tttt",
+"t--t-----t--t--------------t--------t--------t-----t-----t-----------------t",
+"t--tttt--tttttttttttttttttttttt--ttttttt--ttttttt--t--ttttttttttttt--ttttttt",
+"t-----t-----t-----t-----t--t-----t-----------t-----------------t-----t--t--t",
+"tttt--t--t--t--tttt--tttt--t--tttt--ttttttt--tttt--t--tttt--tttt--t--t--t--t",
+"t--------t--------t-----------t--------t-----t-----t--t-----t-----t--------",
+"ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt--"
+
 ];
 
 /* Challenge 2
@@ -34,6 +74,13 @@ let scene;
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
   for(let r = 0; r < maze.length; r++){
+    let row = maze[r];
+    let cols = row.split("");
+    for(let c = 0; c < cols.length; c++){
+      if(cols[c] == "t"){
+       new baze(c,3,r);
+      }
+    }
     /* Challenge 3
       Choose a technique to traverse the each character in the string.
     */ 
@@ -41,6 +88,5 @@ window.addEventListener("DOMContentLoaded",function() {
        Make an appropriate decision based on the characters you chose to enter 
        in the maze.  Create an instance of the corresponding object.
     */
-  }
-
-})
+    }
+  })
