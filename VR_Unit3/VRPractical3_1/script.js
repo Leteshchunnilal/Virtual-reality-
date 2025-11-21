@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded",function() {
   carousel.r = 0;
   carousel.dr = 1;
   /* Challenge 1: Make the carousel rotate only when the mouse is on it.  Hint: Manipulate a flag called "rotate" between true and false. 
-   Two event listeners required. */
+    Two event listeners required. */
   carousel.addEventListener("mouseenter", function(){
     carousel.rotate = true;
   })
